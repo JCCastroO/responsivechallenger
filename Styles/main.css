@@ -1,0 +1,99 @@
+.dia {
+    width: 100%;
+    height: auto;
+    padding: 0.5em 1em;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cor-fonte-principal);
+}
+
+.paciente {
+    margin: 1em;
+}
+
+.paciente__remota,
+.paciente__local {
+    background-color: var(--cor-principal);
+    border-radius: 0.6em;
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.paciente__info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--cor-fonte-principal);
+}
+
+.paciente__info-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-paciente {
+    font-weight: 700;
+    color: var(--cor-fonte-principal);
+}
+
+.modelo-paciente {
+    font-size: 12px;
+    color: var(--cor-fonte-secundaria);
+}
+
+.btn{
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn__video {
+    background-color: var(--cor-btn-video);
+    color: var(--cor-principal);
+    padding: 1em;
+    border: 1px solid var(--cor-btn-video);
+    border-radius: 0.6em;
+}
+
+.btn__audio {
+    background-color: var(--cor-principal);
+    color: var(--cor-fonte-terciaria);
+    padding: 1em;
+    border: none;
+}
+
+.btn__end {
+    width: 100%;
+    background-color: var(--cor-btn-end);
+    color: var(--cor-principal);
+    padding: 1em;
+    border: 1px solid var(--cor-btn-end);
+    border-radius: 0.6em;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .paciente {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .paciente__remota,
+    .paciente__local {
+        width: 45%;
+    }
+
+}
+
+
+@media only screen and (min-width: 1400px) {
+    .paciente__remota,
+    .paciente__local {
+        width: 30%;
+    }
+}
+
+
